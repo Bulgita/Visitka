@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Галерея</title>
+</head>
+<body>
+    <div class="wrapper">
+    <div id="see-all" class="container"></div>
+    <header class="container">
+        <span class="logo"><img src="Union (1).png" alt=""></span>
+        <nav>
+            <ul>
+                <li class="btn"><a href="index.html">Вернутся назад</a></li>
+            </ul>
+        </nav>
+        </header>
+    <h1>Мои работы</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="ярик.jpg" alt="Описание картинки 1" class="gallery-img" onclick="openModal(this)">
+            <div class="description">Портрет в авторском стиле приближенный к реализму</div>
+        </div>
+        <div class="gallery-item">
+            <img src="я.jpg" alt="Описание картинки 2" class="gallery-img" onclick="openModal(this)">
+            <div class="description">Автопортрет в авторском стиле приближенный к реализму</div>
+        </div>
+        <div class="gallery-item">
+            <img src="крис и я.jpg" alt="Описание картинки 3" class="gallery-img" onclick="openModal(this)">
+            <div class="description">Арт посвященный дружбе</div>
+        </div>
+        <div class="gallery-item">
+            <img src="крис 2.jpg" alt="Описание картинки 3" class="gallery-img" onclick="openModal(this)">
+            <div class="description">Работа на продажу. Статус "Продано"</div>
+        </div>
+        <div class="gallery-item">
+            <img src="черный лебедь.jpg" alt="Описание картинки 3" class="gallery-img" onclick="openModal(this)">
+            <div class="description">Арт на заказ. "Черный лебедь"</div>
+        </div>
+        <div class="gallery-item">
+            <img src="чы.png" alt="Описание картинки 3" class="gallery-img" onclick="openModal(this)">
+            <div class="description">Обложка "Kandy Bobby"</div>
+        </div>
+        <div class="gallery-item">
+            <img src="ффчфч.jpg" alt="Описание картинки 3" class="gallery-img" onclick="openModal(this)">
+            <div class="description">Атопортрет. Стиль минимализм</div>
+        </div>
+        <div class="gallery-item">
+            <img src="man.jpg" alt="Описание картинки 3" class="gallery-img" onclick="openModal(this)">
+            <div class="description">Фанарт по аниме</div>
+        </div>
+        <div class="gallery-item">
+            <img src="man2.jpg" alt="Описание картинки 3" class="gallery-img" onclick="openModal(this)">
+            <div class="description">Гифт стиль "мультяшный"</div>
+        </div>
+        <div class="gallery-item">
+            <img src="Sj8ZcNroMvA.jpg" alt="Описание картинки 3" class="gallery-img" onclick="openModal(this)">
+            <div class="description">Карикатура</div>
+        </div>
+        <div class="gallery-item">
+            <img src="wsUZ0xJtWmc.jpg" alt="Описание картинки 3" class="gallery-img" onclick="openModal(this)">
+            <div class="description">Фанарт на ОС по MLP</div>
+        </div>
+        <div class="gallery-item">
+            <img src="r_nR9SBh_cw.jpg" alt="Описание картинки 3" class="gallery-img" onclick="openModal(this)">
+            <div class="description">Гифт</div>
+        </div>
+        <div class="gallery-item">
+            <img src="mouse.jpg" alt="Описание картинки 3" class="gallery-img" onclick="openModal(this)">
+            <div class="description">Адопт "Лунная летучая мышь"</div>
+        </div>
+        <div class="gallery-item">
+            <img src="espeon.jpg" alt="Описание картинки 3" class="gallery-img" onclick="openModal(this)">
+            <div class="description">Работа на аукцион "Еспеон"</div>
+        </div>
+        <div class="gallery-item">
+            <img src="demonGirl1.png" alt="Описание картинки 3" class="gallery-img" onclick="openModal(this)">
+            <div class="description">Работа на аукцион "Демон герл"</div>
+        </div>
+    </div>
+    </div>
+
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        function openModal(img) {
+            const modal = document.getElementById("modal");
+            const modalImg = document.getElementById("modal-img");
+            const caption = document.getElementById("caption");
+            modal.style.display = "block";
+            modalImg.src = img.src;
+            caption.innerHTML = img.alt;
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
+    
+    <marquee scrolldelay="60" style="color:#ffffff; font-size: 30px; font-weight: bolder; line-height: 150%; text-shadow: #d17353 0px 1px 1px;">Boole/БУЛГИТА/KandyBOBBY</marquee>
+</body>
+</html>

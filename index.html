@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визитка</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div class="wrapper">  
+        <div id="active" class="container">
+        <header class="container">
+        <span class="logo"><img src="Union (1).png" alt=""></span>
+        <nav>
+            <ul>
+                <li class="#active"><a href="#">Главная</a></li>
+                <li><a href="#drawing">Рисование</a></li>
+                <li><a href="#anima">Анимация</a></li>
+                <li class="btn"><a href="#contact">Контакт</a></li>
+            </ul>
+        </nav>
+        </header>
+        <div class="hero container">
+        <div class="hero--info">
+            <img src="Group 1 (1).png" alt="">
+            <h1>АЛЛАХВЕРДИЕВА БУЛГИТА</h1>
+            <h2>ХУДОЖНИК-АНИМАТОР-ПРОГРАММИСТ</h2>
+        </div>
+        </div>
+
+        <div class="container portfolio">
+        <div id="drawing" class="container portfolio">
+        <h3>Рисование</h3>
+        <p>С детства я увлекалась рисованием. Каждый свободный момент я проводила с карандашом и бумагой, создавая миры, которые меня окружали. Постепенно это увлечение переросло в настоящую страсть. Я изучала различные техники, пробовала новые материалы и искала свой стиль. </p>
+        <p>Сегодня рисование стало не только моим хобби, но и источником дохода. Я продаю свои арты, участвую в выставках и принимаю заказы. Это удивительное чувство — видеть, как мои работы радуют людей и находят отклик в их сердцах. Искусство наполняет мою жизнь смыслом и вдохновением, и я не могу представить будущее без кистей и холста.</p>
+        <p>Ниже представлены мои недавние работы, нажав на кнопку "Подробнее" вы можете ознакомиться с большим числом моих работ ;)</p>
+        <a href="galery.html" class="see-all">Подробнее</a>
+
+        <div class="art">
+            <div class="block">
+                <img src="demonGirl1.png" class="gallery-img" onclick="openModal(this)">
+            </div>
+            <div class="block">
+                <img src="mouse.jpg" class="gallery-img" onclick="openModal(this)">
+            </div>
+            <div class="block">
+                <img src="собака 2.jpg" class="gallery-img" onclick="openModal(this)">
+            </div>
+            <div class="block">
+                <img src="espeon.jpg" class="gallery-img" onclick="openModal(this)">
+            </div>
+        </div>
+        </div> 
+        <div class="container anima">
+            <div id="anima" class="container anima">
+                <h3>Анимация</h3>
+                <p>Хочу посвятить вас в еще не мало важное для меня занятие. Анимирую я с 2018 года, но у меня был огромный перерыв в 2-3 года, сегодня я стараюсь наверстать упущенное.</p>
+                <p>Так же было бы большим упущением не делиться своим творчеством с миром, какое то время я вела канал на YouTube, и мои анимационные работы получили небольшую известность.</p> 
+                <p>На сегодняшний день я анимирую на заказ, в целях конфиденциальности моих заказчиков я не могу продемонстрировать свои работы, но есть видео в публичном доступе, это реакция на мою анимацию 4-х летней давностью.</p> 
+                <div class="an">
+                    <div class="block">
+                        <iframe src="https://www.youtube.com/embed/tpbQzIim1SI" title="КРЯ - ВАШЕ ТВОРЧЕСТВО - РЕАКЦИЯ НА АНИМАЦИЮ ПРО МЕНЯ 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>  
+    <div id="contact" class="container">
+        <div id="contact">
+            <h1>Обратная связь</h1>
+            <form action="send_email.php" method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+
+
+    </div>
+
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        function openModal(img) {
+            const modal = document.getElementById("modal");
+            const modalImg = document.getElementById("modal-img");
+            const caption = document.getElementById("caption");
+            modal.style.display = "block";
+            modalImg.src = img.src;
+            caption.innerHTML = img.alt;
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
+    
+    <marquee scrolldelay="60" style="color:#ffffff; font-size: 30px; font-weight: bolder; line-height: 150%; text-shadow: #d17353 0px 1px 1px;">Boole/БУЛГИТА/KandyBOBBY</marquee>
+
+</body>
+</html>
